@@ -1,0 +1,7 @@
+<input type="text" placeholder="search" (keyup)="onSearchChange($event)">
+<br>
+
+<app-infinite-scroll (scrolled)="loadPokemons(true, $event)">
+  <app-pokemon-item *ngFor="let pokemon of pokemons" [pokemon]="pokemon" ></app-pokemon-item>
+</app-infinite-scroll>
+

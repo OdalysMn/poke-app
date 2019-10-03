@@ -1,0 +1,9 @@
+<div class="item" [ngClass]="{'item-selected':isSelected === true}">
+  <input type="checkbox" [(ngModel)]="isSelected" (change)="onChange()">
+  <p >#{{ pokemon.pokeIndex }}</p>
+  <h2 >{{ pokemon.name }}</h2>
+  <img [src]="pokemon.image" >
+</div>
+
+
+

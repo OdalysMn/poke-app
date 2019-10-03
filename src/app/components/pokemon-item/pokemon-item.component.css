@@ -1,0 +1,18 @@
+.item {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+  background-color: aliceblue;
+  margin: 15px;
+  text-align: center;
+}
+
+.item-selected {
+  background-color: lightgray;
+  color: aliceblue;
+}
+
+.element{
+  display: grid;
+  place-items: center;
+}
